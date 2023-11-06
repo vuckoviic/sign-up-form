@@ -1,0 +1,9 @@
+body {
+    display: flex;
+    height: 100vh;
+}
+.bg-img {
+    background-image: url('images/background.jpg');
+    min-height: 100%;
+    width: 30vw;
+}
