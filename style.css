@@ -12,6 +12,33 @@ body {
     min-height: 100%;
     width: 30vw;
     background-size: cover;
+    position: relative;
+}
+
+.dark {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-color: rgb(61, 61, 61);
+    opacity: 0.6;
+    z-index: 1;
+    height: 200px;
+    width: 100%
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    position: absolute;
+    z-index: 2;
+    height: 200px;
+    width: 100%;
+}
+
+.logo img {
+    height: 200px;
 }
 
 .right {
@@ -31,7 +58,7 @@ body {
 .form {
     display: flex;
     flex-direction: column;
-    height: 30vh;
+    height: 40vh;
     width: 70vw;
     background-color: rgb(95, 0, 0);
     color: #8B4513;
@@ -39,6 +66,9 @@ body {
 
 form {
     margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
 }
 
 form p {
@@ -54,13 +84,17 @@ form p {
 }
 
 label {
-    font-size: 1.2em;
+    font-size: 0.9em;
+    font-weight: bold;
 }
 
 input {
     width: 500px;
+    height: 20px;
     background-color: rgb(95, 0, 0);
     border: 1px solid #8B4513;
+    color: #8B4513;
+    font-size: 1.2em;
 }
 
 input:focus {
@@ -71,8 +105,7 @@ input:focus {
 }
 
 .create-acc {
-    margin-left: 5vw;
-    font-size: 1.7em;
+    font-size: 1.4rem;
 }
 
 .create-acc button{
@@ -84,7 +117,7 @@ input:focus {
     height: 7vh;
     width: 15vw;
     font-size: 1.6rem;
-    margin-top: 3vh;
+    margin-top: 10vh;
     font-weight: bold;
 }
 
@@ -92,9 +125,15 @@ input:focus {
     transition: 0.4s;
     color: #552300;
     background-color: #8B4513;
-    border: 2px solid #552300;
+    border: 1px solid #552300;
     cursor: pointer;
 }
+
+.create-acc p {
+    color: rgb(95, 0, 0);
+    font-size: 1.2em;
+}
+
 
 #login {
     color: #552300;
