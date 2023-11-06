@@ -41,6 +41,16 @@ body {
     height: 200px;
 }
 
+.credit {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.credit a {
+    color: grey;
+}
+
 .right {
     display: flex;
     flex-direction: column;
@@ -50,7 +60,7 @@ body {
     font-size: 1.5em;
     padding-left: 5vw;
     padding-right: 5vw;
-    margin-top: 10vh;
+    margin-top: 5vh;
     width: 50vw;
     margin-bottom: 5vh;
 }
@@ -138,4 +148,16 @@ input:focus {
 #login {
     color: #552300;
     cursor: pointer;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+input:indeterminate {
+    border: 1px solid #8B4513;
 }
