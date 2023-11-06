@@ -9,10 +9,13 @@
 </head>
 <body>
     <div class="bg-img">
-        <div class="dark">
+        <div class="dark"></div>
+        <div class="logo">
             <img src="images/logo.png" alt="logo">
         </div>
-        <a href="https://unsplash.com/photos/kirkjufell-iceland-4KrQq8Z6Y5c">Photo by Matteo Catanese on unsplash.com</a>
+        <div class="credit">
+            <a href="https://unsplash.com/photos/kirkjufell-iceland-4KrQq8Z6Y5c" target="_blank">Photo by Matteo Catanese on unsplash.com</a>
+        </div>
     </div>
     <div class="right">
         <div class="intro">
@@ -20,45 +23,46 @@
             <p>You <span style="font-style: italic;">know</span> you want to.</p>
         </div>
         <div class="form">
-            <form action="#">
+            <form action="">
                 <p>Let's do this!</p>
                 <div class="names">
                     <div class="form-part">
-                        <label for="fname">First Name</label> <br>
-                        <input type="text" id="fname" name="fname">
+                        <label for="fname">FIRST NAME</label> <br>
+                        <input type="text" id="fname" name="fname" required>
                     </div>
                     <div class="form-part">
-                        <label for="lname">Last name</label> <br>
-                        <input type="text" id="lname" name="lname">
+                        <label for="lname">LAST NAME</label> <br>
+                        <input type="text" id="lname" name="lname" required>
                     </div>
                 </div>
                     <div class="email-and-phone">
                         <div class="form-part">
-                            <label for="email">E-Mail</label> <br>
-                            <input type="email" id="email" name="email">
+                            <label for="email">EMAIL</label> <br>
+                            <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-part">
-                            <label for="phone">Phone Number</label> <br>
+                            <label for="phone">PHONE NUMBER</label> <br>
                             <input type="tel" id="phone" name="phone">
                         </div>
                     </div>
                 <div class="pass">
                 <div class="form-part">
-                    <label for="password">Password</label> <br>
-                        <input type="password" id="password" name="password">
+                    <label for="password">PASSWORD</label> <br>
+                        <input type="password" id="password" name="password" required>
                     </div>
                     <div class="form-part">
-                        <label for="confirm-password">Confirm Password</label> <br>
-                        <input type="password" id="confirm-password" name="confirm-password">
+                        <label for="confirm-password">CONFIRM PASSWORD</label> <br>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
                     </div>
+                </div>
+                <div class="create-acc">
+                    <button type="submit">Create account</button>
+                    <p>Already have an account? <span id="login">Log in</span></p>
                 </div>
             </form>
         </div>
         
-        <div class="create-acc">
-            <button>Create account</button>
-            <p>Already have an account? <span id="login">Log in</span></p>
-        </div>
+
     </div>
 </body>
 </html>
