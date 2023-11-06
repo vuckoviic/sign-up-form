@@ -1,10 +1,12 @@
 body {
     display: flex;
     height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     background-color: #8B4513;
+    color: rgb(95, 0, 0);
 }
+
 .bg-img {
     background-image: url('images/background.jpg');
     min-height: 100%;
@@ -18,16 +20,29 @@ body {
 }
 
 .intro {
-    font-size: 1.4em;
+    font-size: 1.5em;
     padding-left: 5vw;
     padding-right: 5vw;
     margin-top: 10vh;
     width: 50vw;
+    margin-bottom: 5vh;
 }
 
 .form {
     display: flex;
     flex-direction: column;
+    height: 30vh;
+    width: 70vw;
+    background-color: rgb(95, 0, 0);
+    color: #8B4513;
+}
+
+form {
+    margin-left: 5vw;
+}
+
+form p {
+    font-size: 1.5em;
 }
 
 .names,
@@ -35,4 +50,53 @@ body {
 .pass {
     display: flex;
     flex-direction: row;
+    gap: 50px;
+}
+
+label {
+    font-size: 1.2em;
+}
+
+input {
+    width: 500px;
+    background-color: rgb(95, 0, 0);
+    border: 1px solid #8B4513;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid rgb(93, 93, 247);
+    border-radius: 5px;
+
+}
+
+.create-acc {
+    margin-left: 5vw;
+    font-size: 1.7em;
+}
+
+.create-acc button{
+    transition: 0.4s;
+    border-radius: 15px;
+    background-color: #552300;
+    color: #8B4513;
+    border: 0;
+    height: 7vh;
+    width: 15vw;
+    font-size: 1.6rem;
+    margin-top: 3vh;
+    font-weight: bold;
+}
+
+.create-acc button:hover{
+    transition: 0.4s;
+    color: #552300;
+    background-color: #8B4513;
+    border: 2px solid #552300;
+    cursor: pointer;
+}
+
+#login {
+    color: #552300;
+    cursor: pointer;
 }
