@@ -112,7 +112,6 @@ input:focus:valid {
     outline: none;
     border: 2px solid rgb(93, 93, 247);
     border-radius: 5px;
-
 }
 
 .create-acc {
@@ -128,7 +127,7 @@ input:focus:valid {
     height: 7vh;
     width: 15vw;
     font-size: 1.6rem;
-    margin-top: 10vh;
+    margin-top: 7vh;
     font-weight: bold;
 }
 
@@ -155,6 +154,14 @@ input:invalid {
     border: 2px solid red;
 }
 
+.invalid {
+    border: 2px solid red;
+}
+
+.valid {
+    border: 2px solid green;
+}
+
 input:valid {
     border: 2px solid green;
 }
@@ -162,4 +169,9 @@ input:valid {
 input:invalid:default,
 input:valid:default {
     border: 1px solid #8B4513;
+}
+
+#passError {
+    margin: 0;
+    font-size: 1em;
 }
