@@ -107,7 +107,8 @@ input {
     font-size: 1.2em;
 }
 
-input:focus {
+input:focus:invalid,
+input:focus:valid {
     outline: none;
     border: 2px solid rgb(93, 93, 247);
     border-radius: 5px;
@@ -158,6 +159,7 @@ input:valid {
     border: 2px solid green;
 }
 
-input:indeterminate {
+input:invalid:default,
+input:valid:default {
     border: 1px solid #8B4513;
 }
