@@ -105,6 +105,7 @@ input {
     border: 1px solid #8B4513;
     color: #8B4513;
     font-size: 1.2em;
+    padding: 2px;
 }
 
 input:focus:invalid,
@@ -112,6 +113,7 @@ input:focus:valid {
     outline: none;
     border: 2px solid rgb(93, 93, 247);
     border-radius: 5px;
+    box-shadow: 0 0 4px rgb(71, 71, 185);
 }
 
 .create-acc {
@@ -150,26 +152,15 @@ input:focus:valid {
     cursor: pointer;
 }
 
-input:invalid {
+
+input:required:invalid.error {
     border: 2px solid red;
 }
 
-.invalid {
+input:required:valid.error{
     border: 2px solid red;
 }
 
-.valid {
-    border: 2px solid green;
-}
-
-input:valid {
-    border: 2px solid green;
-}
-
-input:invalid:default,
-input:valid:default {
-    border: 1px solid #8B4513;
-}
 
 #passError {
     margin: 0;
