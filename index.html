@@ -23,7 +23,7 @@
             <p>You <span style="font-style: italic;">know</span> you want to.</p>
         </div>
         <div class="form">
-            <form action="" onsubmit="return checkingPassword()">
+            <form action="" onchange="return checkingPassword()" onsubmit="return checkingPassword()">
                 <p>Let's do this!</p>
                 <div class="names">
                     <div class="form-part">
@@ -49,11 +49,11 @@
                 <div class="form-part">
                         <label for="password">PASSWORD</label> <br>
                         <input type="password" id="password" name="password" required>
-                        <p id="passError"></p>
                     </div>
                     <div class="form-part">
                         <label for="confirm-password">CONFIRM PASSWORD</label> <br>
                         <input type="password" id="confirm-password" name="confirm-password" required>
+                        <p id="passError"></p>
                     </div>
                 </div>
                 <div class="create-acc">
