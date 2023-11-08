@@ -54,6 +54,9 @@ body {
 .right {
     display: flex;
     flex-direction: column;
+    flex: 1;
+    max-height: 100vh;
+    overflow: auto;
 }
 
 .intro {
@@ -68,17 +71,23 @@ body {
 .form {
     display: flex;
     flex-direction: column;
-    height: 40vh;
-    width: 70vw;
+    background-color: rgb(95, 0, 0);
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    min-height: 40vh;
     background-color: rgb(95, 0, 0);
     color: #8B4513;
+    gap: 3vh;
+    margin-left: 5vw;
+    flex-wrap: wrap;
 }
 
 form {
-    margin-left: 5vw;
     display: flex;
     flex-direction: column;
-    gap: 3vh;
 }
 
 form p {
@@ -91,6 +100,7 @@ form p {
     display: flex;
     flex-direction: row;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
 label {
@@ -99,7 +109,7 @@ label {
 }
 
 input {
-    width: 500px;
+    width: 300px;
     height: 20px;
     background-color: rgb(95, 0, 0);
     border: 1px solid #8B4513;
@@ -117,20 +127,25 @@ input:focus:valid {
 }
 
 .create-acc {
+    margin-top: max(60px);
     font-size: 1.4rem;
+    max-height: 10vh;
+    background-color: #8B4513;
+    width: 100%;
 }
 
 .create-acc button{
+    margin-top: 5vh;
     transition: 0.4s;
     border-radius: 15px;
     background-color: #552300;
     color: #8B4513;
     border: 0;
-    height: 7vh;
+    min-height: 7vh;
     width: 15vw;
     font-size: 1.6rem;
-    margin-top: 7vh;
     font-weight: bold;
+    margin-left: 5vw;
 }
 
 .create-acc button:hover{
@@ -144,8 +159,8 @@ input:focus:valid {
 .create-acc p {
     color: rgb(95, 0, 0);
     font-size: 1.2em;
+    margin-left: 5vw;
 }
-
 
 #login {
     color: #552300;
