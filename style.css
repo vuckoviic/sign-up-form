@@ -164,5 +164,6 @@ input:required:valid.error{
 
 #passError {
     margin: 0;
-    font-size: 1em;
+    font-size: 0.9em;
+    font-style: italic;
 }
